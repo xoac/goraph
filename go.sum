@@ -1,5 +1,4 @@
-github.com/gyuho/goraph v0.0.0-20171001060514-a7a4454fd3eb h1:1mTTeUpJ+imP9A0eSfNnzif1pkpiEoy+ait7XiSqGNc=
-github.com/gyuho/goraph v0.0.0-20171001060514-a7a4454fd3eb/go.mod h1:NtSxZCD+s3sZFwbW6WceOcUD83HM9XD5OE2r4c0P8eg=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
 gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
 gopkg.in/yaml.v2 v2.3.0 h1:clyUAQHOM3G0M3f5vQj7LuJrETvjVot3Z5el9nffUtU=
 gopkg.in/yaml.v2 v2.3.0/go.mod h1:hI93XBmqTisBFMUTm0b8Fm+jr3Dg1NNxqwp+5A1VGuI=

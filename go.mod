@@ -1,7 +1,5 @@
-module github.com/gyuho/goraph
+module github.com/xoac/goraph
 
 go 1.14
 
-require (
-	gopkg.in/yaml.v2 v2.3.0
-)
+require gopkg.in/yaml.v2 v2.3.0

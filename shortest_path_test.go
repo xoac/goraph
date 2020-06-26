@@ -7,6 +7,20 @@ import (
 	"testing"
 )
 
+func TestEmptyGraph(t *testing.T) {
+	g := NewGraph()
+	node := "nonexist"
+	g.AddNode(NewNode(node))
+	path, _, err := Dijkstra(g, StringID("dd"), StringID(node))
+	if err != nil {
+		t.Fatal(err)
+	}
+
+	if len(path) > 0 {
+		t.Fatal("not empty path to non-exist node")
+	}
+	// TODO distance
+}
 func TestGraph_Dijkstra_03(t *testing.T) {
 	f, err := os.Open("testdata/graph.json")
 	if err != nil {
