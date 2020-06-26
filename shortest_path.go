@@ -139,11 +139,13 @@ func Dijkstra(g Graph, source, target ID) ([]ID, map[ID]float64, error) {
 		u = prev[u]
 	}
 
-	// add the source
-	temp := make([]ID, len(path)+1)
-	temp[0] = source
-	copy(temp[1:], path)
-	path = temp
+	// add the source if path was found
+	if len(path) > 0 {
+		temp := make([]ID, len(path)+1)
+		temp[0] = source
+		copy(temp[1:], path)
+		path = temp
+	}
 
 	return path, distance, nil
 }
@@ -333,10 +335,12 @@ func BellmanFord(g Graph, source, target ID) ([]ID, map[ID]float64, error) {
 	}
 
 	// add the source
-	temp := make([]ID, len(path)+1)
-	temp[0] = source
-	copy(temp[1:], path)
-	path = temp
+	if len(path) > 0 {
+		temp := make([]ID, len(path)+1)
+		temp[0] = source
+		copy(temp[1:], path)
+		path = temp
+	}
 
 	return path, distance, nil
 }
